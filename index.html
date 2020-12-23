@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee App</title>
+</head>
+<body>
+    <h2>Employee Registration</h2>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-6 col-md-3">
+            <table class="table table-borderless">
+
+                <tr>
+                    <td>Employee code</td>
+                    <td><input id="code" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Employee name</td>
+                    <td><input id="name" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Desig</td>
+                    <td><input id="desi" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input id="add" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Mobile no</td>
+                    <td><input id="mobile" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td><input id="user" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input id="pass" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>confirm password</td>
+                    <td><input id="confirm" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="buttonclick()" class="btn btn-danger">SUBMIT</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function buttonclick(){
+        var getcode=document.getElementById("code").value
+        var getname=document.getElementById("name").value
+        var getdesi=document.getElementById("desi").value
+        var getadd=document.getElementById("add").value
+        var getmobile=document.getElementById("mobile").value
+        var getuser=document.getElementById("user").value
+        var getpass=document.getElementById("pass").value
+        var getconfirm=document.getElementById("confirm").value
+        console.log(getcode)
+        console.log(getname)
+        console.log(getdesi)
+        console.log(getadd)
+        console.log(getmobile)
+        console.log(getuser)
+        console.log(getpass)
+        console.log(getconfirm)
+    }
+</script>
+</body>
+</html>
